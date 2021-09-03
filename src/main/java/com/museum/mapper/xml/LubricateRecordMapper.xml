@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.LubricateRecordMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.LubricateRecord">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column="createtimes" property="createtimes"/>
+                    <result column="cards" property="cards"/>
+                    <result column="type" property="type"/>
+                    <result column="name" property="name"/>
+                    <result column="cost" property="cost"/>
+                    <result column="inserttimes" property="inserttimes"/>
+                    <result column="remarks" property="remarks"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid, createtimes, cards, type, name, cost, inserttimes, remarks
+        </sql>
+
+</mapper>

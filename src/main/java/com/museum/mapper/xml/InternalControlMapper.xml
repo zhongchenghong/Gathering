@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.InternalControlMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.InternalControl">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column=" institution_title" property=" institutionTitle"/>
+                    <result column=" institution_context" property=" institutionContext"/>
+                    <result column="file_name" property="fileName"/>
+                    <result column="file_address" property="fileAddress"/>
+                    <result column="createtimes" property="createtimes"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid,  institution_title,  institution_context, file_name, file_address, createtimes
+        </sql>
+
+</mapper>

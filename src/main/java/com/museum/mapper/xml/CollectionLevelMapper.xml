@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.CollectionLevelMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.CollectionLevel">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column="collection_year" property="collectionYear"/>
+                    <result column="collection_tradition_sum" property="collectionTraditionSum"/>
+                    <result column="collection_actual_sum" property="collectionActualSum"/>
+                    <result column="old_collection_tradition" property="oldCollectionTradition"/>
+                    <result column="one_level_actual" property="oneLevelActual"/>
+                    <result column="two_level_tradition" property="twoLevelTradition"/>
+                    <result column="two_level_actual" property="twoLevelActual"/>
+                    <result column="three_level_tradition" property="threeLevelTradition"/>
+                    <result column="three_level_actual" property="threeLevelActual"/>
+                    <result column="commonly_tradition" property="commonlyTradition"/>
+                    <result column="commonly_actual" property="commonlyActual"/>
+                    <result column="undefined_tradition" property="undefinedTradition"/>
+                    <result column="undefined_actual" property="undefinedActual"/>
+                    <result column="createtime" property="createtime"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid, collection_year, collection_tradition_sum, collection_actual_sum, old_collection_tradition, one_level_actual, two_level_tradition, two_level_actual, three_level_tradition, three_level_actual, commonly_tradition, commonly_actual, undefined_tradition, undefined_actual, createtime
+        </sql>
+
+</mapper>

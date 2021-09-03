@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.MerchantStatisticsMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.MerchantStatistics">
+                    <id column="id" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="types" property="types"/>
+                    <result column="total_money" property="totalMoney"/>
+                    <result column="singular" property="singular"/>
+                    <result column="average_singular" property="averageSingular"/>
+                    <result column="createtimes" property="createtimes"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, name, types, total_money, singular, average_singular, createtimes
+        </sql>
+
+</mapper>

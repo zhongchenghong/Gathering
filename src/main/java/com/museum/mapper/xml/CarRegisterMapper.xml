@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.CarRegisterMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.CarRegister">
+                    <id column="id" property="id"/>
+                    <result column="cards" property="cards"/>
+                    <result column="engine" property="engine"/>
+                    <result column="brand" property="brand"/>
+                    <result column="colour" property="colour"/>
+                    <result column="passenger" property="passenger"/>
+                    <result column="model" property="model"/>
+                    <result column="displacement" property="displacement"/>
+                    <result column="buytime" property="buytime"/>
+                    <result column="inspectiontime" property="inspectiontime"/>
+                    <result column="fuel_type" property="fuelType"/>
+                    <result column="fuel" property="fuel"/>
+                    <result column="createtimes" property="createtimes"/>
+                    <result column="name" property="name"/>
+                    <result column="address" property="address"/>
+                    <result column="uid" property="uid"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, cards, engine, brand, colour, passenger, model, displacement, buytime, inspectiontime, fuel_type, fuel, createtimes, name, address,uid
+        </sql>
+
+</mapper>

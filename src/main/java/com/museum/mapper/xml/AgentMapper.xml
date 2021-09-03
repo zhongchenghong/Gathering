@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.AgentMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.Agent">
+                    <id column="id" property="id"/>
+                    <result column="titles" property="titles"/>
+                    <result column="createtimes" property="createtimes"/>
+                    <result column="content" property="content"/>
+                    <result column="uid" property="uid"/>
+                    <result column="agent_type" property="agentType"/>
+                    <result column="image_data_id" property="imageDataId"/>
+                    <result column="mission_plan_id" property="missionPlanId"/>
+                    <result column="state" property="state"/>
+                    <result column="submitid" property="submitid"/>
+                    <result column="submitname" property="submitname"/>
+                    <result column="position" property="position"/>
+                    <result column="names" property="names"/>
+                    <result column="chulitime" property="chulitime"/>
+                    <result column="faqitime" property="faqitime"/>
+                    <result column="image_content" property="imageContent"/>
+                    <result column="image_data_pro" property="imageDataPro"/>
+
+
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, titles, createtimes, content, uid, agent_type, mission_plan_id,image_data_id,state,submitid,submitname,position,names,chulitime,faqitime,image_content,image_data_pro
+        </sql>
+
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.ActivityRegistrationMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.ActivityRegistration">
+                    <id column="id" property="id"/>
+                    <result column="idm" property="idm"/>
+                    <result column="name" property="name"/>
+                    <result column="gender" property="gender"/>
+                    <result column="school" property="school"/>
+                    <result column="grade" property="grade"/>
+                    <result column="registerTime" property="registerTime"/>
+                    <result column="createTime" property="createTime"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, idm, name, gender, school, grade, registerTime, createTime
+        </sql>
+
+</mapper>

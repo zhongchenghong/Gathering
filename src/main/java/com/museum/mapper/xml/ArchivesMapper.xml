@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.ArchivesMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.Archives">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column="archives_name" property="archivesName"/>
+                    <result column="borrowing_name" property="borrowingName"/>
+                    <result column="types" property="types"/>
+                    <result column="content" property="content"/>
+                    <result column="department" property="department"/>
+                    <result column="createTime" property="createTime"/>
+                    <result column="departmentId" property="departmentId"/>
+                    <result column="archivesTypeId" property="archivesTypeId"/>
+                    <result column="borrowTime" property="borrowTime"/>
+                    <result column="returnTime" property="returnTime"/>
+                    <result column="pay_department" property="payDepartment"/>
+
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid, archives_name, borrowing_name, types, createTime,content,department,departmentId,archivesTypeId,borrowTime,returnTime,pay_department
+        </sql>
+
+</mapper>

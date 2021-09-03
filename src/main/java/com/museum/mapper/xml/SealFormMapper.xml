@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.SealFormMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.SealForm">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column="departmentid" property="departmentid"/>
+                    <result column="name1" property="name1"/>
+                    <result column="name2" property="name2"/>
+                    <result column="sealtype" property="sealtype"/>
+                    <result column="sealsum" property="sealsum"/>
+                    <result column="phone" property="phone"/>
+                    <result column="reason" property="reason"/>
+                    <result column="createTime" property="createTime"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid, departmentid, name1, name2, sealtype, sealsum, phone, reason, createTime
+        </sql>
+
+</mapper>

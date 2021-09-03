@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.MailListMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.MailList">
+                    <id column="id" property="id"/>
+                    <result column="mail_list_id" property="mailListId"/>
+                    <result column="mail_uid" property="mailUid"/>
+                    <result column="createtimes" property="createtimes"/>
+                    <result column="uid" property="uid"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, mail_list_id, mail_uid, createtimes,uid
+        </sql>
+    <!-- 通用查询结果列 -->
+        <sql id="account_List">
+           userName, department_name, mail_uid, createtimes,uid,position_name,phone,fixed_line,email
+        </sql>
+        <select id="getmaillists"  resultType="com.museum.domain.AccountList">
+            select
+                account.userName,department.department_name,position.position_name,account.phone,account.fixed_line,account.email
+            from mail_list
+            LEFT JOIN  account_mail_list  on mail_list.mail_list_id=account_mail_list.id
+            LEFT JOIN account on account_mail_list.uid=account.id
+            LEFT JOIN position on account.position_id=position.id
+            LEFT JOIN department on account.department_id=department.id
+            where account_mail_list.id=#{id} and account_mail_list.uid=#{uid} GROUP BY mail_list.mail_uid
+        </select>
+
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.ScreenMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.Screen">
+                    <id column="id" property="id"/>
+                    <result column="screen_name" property="screenName"/>
+                    <result column="resolving_power" property="resolvingPower"/>
+                    <result column="createtimes" property="createtimes"/>
+                    <result column="screen_position" property="screenPosition"/>
+                    <result column="screen_contentid" property="screenContentid"/>
+
+
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, screen_name, resolving_power, createtimes, screen_position,screen_contentid
+        </sql>
+        <!-- 通用查询结果列 -->
+        <sql id="Screen_Column_List">
+            id, screen_name, resolving_power, createtimes, screen_position,screen_contentid,
+            screen_id, screen_content, screen_pictureid, screen_voideid
+        </sql>
+        <select id="selectScreenVOScreenContent">
+            select * from screen
+            (select readdress,types,filename,pathaddress,screen_resources.id as srid from screen_resources where  screen_resources.id=
+            (select screen_content.screen_pictureid from screen   left join screen_content on screen.screen_contentid = screen_content.id  where screen.id=#{id}))
+        </select>
+</mapper>

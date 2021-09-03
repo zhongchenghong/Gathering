@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.JinliActivityEntryMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.JinliActivityEntry">
+                    <id column="id" property="id"/>
+                    <result column="startTime" property="startTime"/>
+                    <result column="endTime" property="endTime"/>
+                    <result column="activity_name" property="activityName"/>
+                    <result column="publisherId" property="publisherId"/>
+                    <result column="introduce" property="introduce"/>
+                    <result column="uid" property="uid"/>
+                    <result column="filename" property="filename"/>
+                    <result column="fileaddress" property="fileaddress"/>
+                    <result column="createtime" property="createtime"/>
+                    <result column="state" property="state"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, startTime, endTime, activity_name, publisherId, introduce, uid, filename, fileaddress, createtime,state
+        </sql>
+
+</mapper>

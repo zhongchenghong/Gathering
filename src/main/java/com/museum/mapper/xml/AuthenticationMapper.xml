@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.AuthenticationMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.Authentication">
+                    <id column="id" property="id"/>
+                    <result column="system_name" property="sysname"/>
+                    <result column="system_url" property="systemUrl"/>
+                    <result column="only_sum" property="onlySum"/>
+                    <result column="times" property="times"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, sysname, system_url, times,only_sum
+        </sql>
+
+</mapper>

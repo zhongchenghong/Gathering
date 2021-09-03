@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.AcademicPapersMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.AcademicPapers">
+                    <id column="id" property="id"/>
+                    <result column="title" property="title"/>
+                    <result column="name" property="name"/>
+                    <result column="introduce" property="introduce"/>
+                    <result column="publish_time" property="publishTime"/>
+                    <result column="filename" property="filename"/>
+                    <result column="fileaddress" property="fileaddress"/>
+                    <result column="uid" property="uid"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, title, name, introduce, publish_time, filename, fileaddress, uid
+        </sql>
+
+</mapper>

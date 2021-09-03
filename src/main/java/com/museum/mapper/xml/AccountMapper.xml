@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.AccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMaps" type="com.museum.domain.Account">
+        <id column="id" property="id"/>
+        <result column="userName" property="userName"/>
+        <result column="password" property="password"/>
+        <result column="createtimes" property="createtimes"/>
+        <result column="macid" property="macid"/>
+        <result column="phone" property="phone"/>
+        <result column="code" property="code"/>
+        <result column="codecreatetime" property="codecreatetime"/>
+        <result column="fixed_line" property="fixed_line"/>
+        <result column="department_id" property="department_id"/>
+        <result column="position_id" property="position_id"/>
+        <result column="department_name" property="department_name"/>
+        <result column="position_name" property="position_name"/>
+        <result column="mail" property="mail"/>
+        <result column="expiration_time" property="expirationTime"/>
+        <result column="agency_state" property="agencyState"/>
+        <result column="agencystarttime" property="agencystarttime"/>
+        <result column="agencyendtime" property="agencyendtime"/>
+        <result column="agency_uid" property="agencyUid"/>
+        <result column="name" property="name"/>
+        <result column="department_name" property="departmentName"/>
+        <result column="picture" property="picture"/>
+
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+            id, userName, password,createtimes,macid,phone,code,codecreatetime,fixed_line,department_id,
+            position_id,mail,expiration_time,agency_state
+            ,agencystarttime,agencyendtime,agency_uid,name,department_name,picture
+    </sql>
+
+
+</mapper>

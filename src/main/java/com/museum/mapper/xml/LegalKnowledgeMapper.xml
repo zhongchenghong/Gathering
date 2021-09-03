@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.LegalKnowledgeMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.LegalKnowledge">
+                    <id column="id" property="id"/>
+                    <result column="law_type" property="lawType"/>
+                    <result column="law_title" property="lawTitle"/>
+                    <result column="law_content" property="lawContent"/>
+                    <result column="law_filepath" property="lawFilepath"/>
+                    <result column="uid" property="uid"/>
+                    <result column="createtimes" property="createtimes"/>
+                    <result column="filename" property="filename"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, law_type, law_title, law_content, law_filepath, uid, createtimes, filename
+        </sql>
+
+</mapper>

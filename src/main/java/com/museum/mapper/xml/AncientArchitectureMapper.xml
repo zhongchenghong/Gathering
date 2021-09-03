@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.AncientArchitectureMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.AncientArchitecture">
+                    <id column="id" property="id"/>
+                    <result column="num" property="num"/>
+                    <result column="name" property="name"/>
+                    <result column="address" property="address"/>
+                    <result column="level" property="level"/>
+                    <result column="area" property="area"/>
+                    <result column="years" property="years"/>
+                    <result column="category" property="category"/>
+                    <result column="introduction" property="introduction"/>
+                    <result column="situation" property="situation"/>
+                    <result column="situation_description" property="situationDescription"/>
+                    <result column="maintain_records" property="maintainRecords"/>
+                    <result column="information" property="information"/>
+                    <result column="record" property="record"/>
+                    <result column="creatimes" property="creatimes"/>
+                    <result column="uid" property="uid"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, num, name, address, level, area, years, category, introduction, situation, situation_description, maintain_records, information, record, creatimes, uid
+        </sql>
+
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.PointsMessageMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.PointsMessage">
+                    <id column="id" property="id"/>
+                    <result column="abscissa" property="abscissa"/>
+                    <result column="ordinate" property="ordinate"/>
+                    <result column="map_pointsId" property="mapPointsid"/>
+                    <result column="createtimes" property="createtimes"/>
+                    <result column="point_name" property="pointName"/>
+                    <result column="point_describe" property="pointDescribe"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, abscissa, ordinate, map_pointsId, createtimes, point_name, point_describe
+        </sql>
+
+</mapper>

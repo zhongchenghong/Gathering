@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.SafeOperationMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.SafeOperation">
+                    <id column="id" property="id"/>
+                    <result column="lid" property="lid"/>
+                    <result column="imergecount" property="imergecount"/>
+                    <result column="ceventname" property="ceventname"/>
+                    <result column="ceventdigest" property="ceventdigest"/>
+                    <result column="ceventtype" property="ceventtype"/>
+                    <result column="icollecttype" property="icollecttype"/>
+                    <result column="ieventlevel" property="ieventlevel"/>
+                    <result column="iprotocol" property="iprotocol"/>
+                    <result column="iappprotocol" property="iappprotocol"/>
+                    <result column="csrcname" property="csrcname"/>
+                    <result column="csrcmac" property="csrcmac"/>
+                    <result column="csrcip" property="csrcip"/>
+                    <result column="csrctip" property="csrctip"/>
+                    <result column="isrcport" property="isrcport"/>
+                    <result column="isrctport" property="isrctport"/>
+                    <result column="cdstname" property="cdstname"/>
+                    <result column="cdstmac" property="cdstmac"/>
+                    <result column="cdstip" property="cdstip"/>
+                    <result column="cdsttip" property="cdsttip"/>
+                    <result column="idstport" property="idstport"/>
+                    <result column="idsttport" property="idsttport"/>
+                    <result column="cusername" property="cusername"/>
+                    <result column="cprogram" property="cprogram"/>
+                    <result column="coperation" property="coperation"/>
+                    <result column="cobject" property="cobject"/>
+                    <result column="iresult" property="iresult"/>
+                    <result column="ireponse" property="ireponse"/>
+                    <result column="cdevname" property="cdevname"/>
+                    <result column="cdevtype" property="cdevtype"/>
+                    <result column="cdevip" property="cdevip"/>
+                    <result column="loccurtime" property="loccurtime"/>
+                    <result column="lrecepttime" property="lrecepttime"/>
+                    <result column="ccollectorip" property="ccollectorip"/>
+                    <result column="lsend" property="lsend"/>
+                    <result column="lreceive" property="lreceive"/>
+                    <result column="lduration" property="lduration"/>
+                    <result column="dmonitorvalue" property="dmonitorvalue"/>
+                    <result column="corilevel" property="corilevel"/>
+                    <result column="coritype" property="coritype"/>
+                    <result column="istandby1" property="istandby1"/>
+                    <result column="istandby2" property="istandby2"/>
+                    <result column="lstandby1" property="lstandby1"/>
+                    <result column="lstandby2" property="lstandby2"/>
+                    <result column="dstandby1" property="dstandby1"/>
+                    <result column="dstandby2" property="dstandby2"/>
+                    <result column="cstandby1" property="cstandby1"/>
+                    <result column="cstandby2" property="cstandby2"/>
+                    <result column="cstandby3" property="cstandby3"/>
+                    <result column="cstandby4" property="cstandby4"/>
+                    <result column="cstandby5" property="cstandby5"/>
+                    <result column="cstandby6" property="cstandby6"/>
+                    <result column="istandby3" property="istandby3"/>
+                    <result column="istandby4" property="istandby4"/>
+                    <result column="istandby5" property="istandby5"/>
+                    <result column="istandby6" property="istandby6"/>
+                    <result column="lstandby3" property="lstandby3"/>
+                    <result column="lstandby4" property="lstandby4"/>
+                    <result column="lstandby5" property="lstandby5"/>
+                    <result column="lstandby6" property="lstandby6"/>
+                    <result column="cstandby7" property="cstandby7"/>
+                    <result column="cstandby8" property="cstandby8"/>
+                    <result column="cstandby9" property="cstandby9"/>
+                    <result column="cstandby10" property="cstandby10"/>
+                    <result column="cstandby11" property="cstandby11"/>
+                    <result column="cstandby12" property="cstandby12"/>
+                    <result column="crequestmsg" property="crequestmsg"/>
+                    <result column="ceventmsg" property="ceventmsg"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, lid, imergecount, ceventname, ceventdigest, ceventtype, icollecttype, ieventlevel, iprotocol, iappprotocol, csrcname, csrcmac, csrcip, csrctip, isrcport, isrctport, cdstname, cdstmac, cdstip, cdsttip, idstport, idsttport, cusername, cprogram, coperation, cobject, iresult, ireponse, cdevname, cdevtype, cdevip, loccurtime, lrecepttime, ccollectorip, lsend, lreceive, lduration, dmonitorvalue, corilevel, coritype, istandby1, istandby2, lstandby1, lstandby2, dstandby1, dstandby2, cstandby1, cstandby2, cstandby3, cstandby4, cstandby5, cstandby6, istandby3, istandby4, istandby5, istandby6, lstandby3, lstandby4, lstandby5, lstandby6, cstandby7, cstandby8, cstandby9, cstandby10, cstandby11, cstandby12, crequestmsg, ceventmsg
+        </sql>
+
+</mapper>

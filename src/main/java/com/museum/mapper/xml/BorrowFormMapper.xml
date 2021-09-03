@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.BorrowFormMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.BorrowForm">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column="borrow_time" property="borrowTime"/>
+                    <result column="borrow_department" property="borrowDepartment"/>
+                    <result column="borrow_name" property="borrowName"/>
+                    <result column="borrow_title" property="borrowTitle"/>
+                    <result column="borrow_sum" property="borrowSum"/>
+                    <result column="return_time" property="returnTime"/>
+                    <result column="purpose" property="purpose"/>
+                    <result column="remarks" property="remarks"/>
+                    <result column="createtime" property="createtime"/>
+
+
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid, borrow_time, borrow_department, borrow_name, borrow_title, borrow_sum, return_time, purpose, remarks,createtime
+        </sql>
+
+</mapper>

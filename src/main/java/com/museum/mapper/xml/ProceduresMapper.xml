@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.ProceduresMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.Procedures">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column="apply_type" property="applyType"/>
+                    <result column="apply_time" property="applyTime"/>
+                    <result column="roles" property="roles"/>
+                    <result column="state" property="state"/>
+                    <result column="process_id" property="processId"/>
+                    <result column="apply_typeid" property="applyTypeid"/>
+                    <result column="pname" property="pname"/>
+                    <result column="process_name" property="processName"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid, apply_type, apply_time, roles, state, process_id, apply_typeid, pname, process_name
+        </sql>
+
+</mapper>

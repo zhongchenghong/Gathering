@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.DataCollectionProcessMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.DataCollectionProcess">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column="department_director_id" property="departmentDirectorId"/>
+                    <result column="information_center" property="informationCenter"/>
+                    <result column="title" property="title"/>
+                    <result column="department_director_time" property="departmentDirectorTime"/>
+                    <result column="department_director_state" property="departmentDirectorState"/>
+                    <result column="information_center_state" property="informationCenterState"/>
+                    <result column="information_center_time" property="informationCenterTime"/>
+                    <result column="image_dataId" property="imageDataid"/>
+                    <result column="createTime" property="createTime"/>
+                    <result column="directorconsultId" property="directorconsultId"/>
+                    <result column="centerconsultId" property="centerconsultId"/>
+                    <result column="grantId" property="grantId"/>
+                    <result column="center_remarks" property="centerRemarks"/>
+                    <result column="director_remarks" property="directorRemarks"/>
+
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid, department_director_id, information_center, title, department_director_time,
+            department_director_state, information_center_state, information_center_time, image_dataId, createTime,
+             directorconsultId, centerconsultId, grantId,center_remarks,director_remarks
+        </sql>
+
+</mapper>

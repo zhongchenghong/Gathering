@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.CollectionClassificationMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.CollectionClassification">
+                    <id column="id" property="id"/>
+                    <result column="collection_year" property="collectionYear"/>
+                    <result column="collection_tradition_sum" property="collectionTraditionSum"/>
+                    <result column="collection_actual_sum" property="collectionActualSum"/>
+                    <result column=" jadeware_tradition" property=" jadewareTradition"/>
+                    <result column=" jadeware_actual" property=" jadewareActual"/>
+                    <result column="pottery_tradition" property="potteryTradition"/>
+                    <result column="pottery_actual" property="potteryActual"/>
+                    <result column="porcelain_tradition" property="porcelainTradition"/>
+                    <result column="porcelain_actual" property="porcelainActual"/>
+                    <result column="bronze_ware_tradition" property="bronzeWareTradition"/>
+                    <result column="bronze_ware_actual" property="bronzeWareActual"/>
+                    <result column="silver_tradition" property="silverTradition"/>
+                    <result column="silver_actual" property="silverActual"/>
+                    <result column="iron_tradition" property="ironTradition"/>
+                    <result column="iron_actual" property="ironActual"/>
+                    <result column="lacquer_ware_tradition" property="lacquerWareTradition"/>
+                    <result column="lacquer_ware_actual" property="lacquerWareActual"/>
+                    <result column="plasticizer_tradition" property="plasticizerTradition"/>
+                    <result column="plasticizer_actual" property="plasticizerActual"/>
+                    <result column="stone_artifact_tradition" property="stoneArtifactTradition"/>
+                    <result column="stone_artifact_actual" property="stoneArtifactActual"/>
+                    <result column="calligraphy_tradition" property="calligraphyTradition"/>
+                    <result column="calligraphy_actual" property="calligraphyActual"/>
+                    <result column="stationery_tradition" property="stationeryTradition"/>
+                    <result column="stationery_actual" property="stationeryActual"/>
+                    <result column="oracle_bone_tradition" property="oracleBoneTradition"/>
+                    <result column="oracle_bone_actual" property="oracleBoneActual"/>
+                    <result column="imperial_jade_seal_tradition" property="imperialJadeSealTradition"/>
+                    <result column="imperial_jade_seal_actual" property="imperialJadeSealActual"/>
+                    <result column="money_tradition" property="moneyTradition"/>
+                    <result column="money_actual" property="moneyActual"/>
+                    <result column="dental_bone_tradition" property="dentalBoneTradition"/>
+                    <result column="dental_bone_actual" property="dentalBoneActual"/>
+                    <result column="bamboo_tradition" property="bambooTradition"/>
+                    <result column="bamboo_actual" property="bambooActual"/>
+                    <result column="furniture_tradition" property="furnitureTradition"/>
+                    <result column="furniture_actual" property="furnitureActual"/>
+                    <result column="enamel_tradition" property="enamelTradition"/>
+                    <result column="enamel_actual" property="enamelActual"/>
+                    <result column="embroidery_tradition" property="embroideryTradition"/>
+                    <result column="embroidery_actual" property="embroideryActual"/>
+                    <result column="ancient_works_tradition" property="ancientWorksTradition"/>
+                    <result column="ancient_works_actual" property="ancientWorksActual"/>
+                    <result column="rubbing_tradition" property="rubbingTradition"/>
+                    <result column="rubbing_actual" property="rubbingActual"/>
+                    <result column="arms_tradition" property="armsTradition"/>
+                    <result column="arms_actual" property="armsActual"/>
+                    <result column="stamp_products_tradition" property="stampProductsTradition"/>
+                    <result column="stamp_products_actual" property="stampProductsActual"/>
+                    <result column="file_tradition" property="fileTradition"/>
+                    <result column="file_actual" property="fileActual"/>
+                    <result column="archives_tradition" property="archivesTradition"/>
+                    <result column="archives_actual" property="archivesActual"/>
+                    <result column="relic_tradition" property="relicTradition"/>
+                    <result column="relic_actual" property="relicActual"/>
+                    <result column="glass_tradition" property="glassTradition"/>
+                    <result column="glass_actual" property="glassActual"/>
+                    <result column="musical_Instruments_tradition" property="musicalInstrumentsTradition"/>
+                    <result column="musical_Instruments_actual" property="musicalInstrumentsActual"/>
+                    <result column="leatherwear_tradition" property="leatherwearTradition"/>
+                    <result column="leatherwear_actual" property="leatherwearActual"/>
+                    <result column="video_tradition" property="videoTradition"/>
+                    <result column="video_actual" property="videoActual"/>
+                    <result column="bill_traffic" property="billTraffic"/>
+                    <result column="bill_actual" property="billActual"/>
+                    <result column="traffic_traffic" property="trafficTraffic"/>
+                    <result column="traffic_actual" property="trafficActual"/>
+                    <result column="measure_traffic" property="measureTraffic"/>
+                    <result column="measure_actual" property="measureActual"/>
+                    <result column="specimen_traffic" property="specimenTraffic"/>
+                    <result column="specimen_actual" property="specimenActual"/>
+                    <result column="other_traffic" property="otherTraffic"/>
+                    <result column="other_actual" property="otherActual"/>
+                    <result column="stone_carving_traffic" property="stoneCarvingTraffic"/>
+                    <result column="stone_carving_actual" property="stoneCarvingActual"/>
+                    <result column="brick_traffic" property="brickTraffic"/>
+                    <result column="brick_actual" property="brickActual"/>
+                    <result column="painting_traffic" property="paintingTraffic"/>
+                    <result column="painting_actual" property="paintingActual"/>
+                    <result column="rubbing_tradition1" property="rubbingTradition1"/>
+                    <result column="rubbing_actual1" property="rubbingActual1"/>
+                    <result column="uid" property="uid"/>
+                    <result column="createtime" property="createtime"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, collection_year, collection_tradition_sum, collection_actual_sum,  jadeware_tradition,  jadeware_actual, pottery_tradition, pottery_actual, porcelain_tradition, porcelain_actual, bronze_ware_tradition, bronze_ware_actual, silver_tradition, silver_actual, iron_tradition, iron_actual, lacquer_ware_tradition, lacquer_ware_actual, plasticizer_tradition, plasticizer_actual, stone_artifact_tradition, stone_artifact_actual, calligraphy_tradition, calligraphy_actual, stationery_tradition, stationery_actual, oracle_bone_tradition, oracle_bone_actual, imperial_jade_seal_tradition, imperial_jade_seal_actual, money_tradition, money_actual, dental_bone_tradition, dental_bone_actual, bamboo_tradition, bamboo_actual, furniture_tradition, furniture_actual, enamel_tradition, enamel_actual, embroidery_tradition, embroidery_actual, ancient_works_tradition, ancient_works_actual, rubbing_tradition, rubbing_actual, arms_tradition, arms_actual, stamp_products_tradition, stamp_products_actual, file_tradition, file_actual, archives_tradition, archives_actual, relic_tradition, relic_actual, glass_tradition, glass_actual, musical_Instruments_tradition, musical_Instruments_actual, leatherwear_tradition, leatherwear_actual, video_tradition, video_actual, bill_traffic, bill_actual, traffic_traffic, traffic_actual, measure_traffic, measure_actual, specimen_traffic, specimen_actual, other_traffic, other_actual, stone_carving_traffic, stone_carving_actual, brick_traffic, brick_actual, painting_traffic, painting_actual, rubbing_tradition1, rubbing_actual1, uid, createtime
+        </sql>
+
+</mapper>

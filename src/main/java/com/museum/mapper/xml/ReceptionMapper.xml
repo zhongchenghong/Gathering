@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.ReceptionMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.Reception">
+                    <id column="id" property="id"/>
+                    <result column="company" property="company"/>
+                    <result column="sum" property="sum"/>
+                    <result column="contact" property="contact"/>
+                    <result column="phone" property="phone"/>
+                    <result column="cultural_relic" property="culturalRelic"/>
+                    <result column="jingli" property="jingli"/>
+                    <result column="culture" property="culture"/>
+                    <result column="lecture" property="lecture"/>
+                    <result column="cultural_relic_time" property="culturalRelicTime"/>
+                    <result column="jingli_time" property="jingliTime"/>
+                    <result column="culture_time" property="cultureTime"/>
+                    <result column="lecture_time" property="lectureTime"/>
+                    <result column="department" property="department"/>
+                    <result column="free_ticket" property="freeTicket"/>
+                    <result column="explain" property="explain"/>
+                    <result column="accompany" property="accompany"/>
+                    <result column="parking" property="parking"/>
+                    <result column="remarks" property="remarks"/>
+                    <result column="leaderid" property="leaderid"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, company, sum, contact, phone, cultural_relic, jingli, culture, lecture, cultural_relic_time, jingli_time, culture_time, lecture_time, department, free_ticket, explain, accompany, parking, remarks, leaderid
+        </sql>
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.InsuranceMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.Insurance">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column="cards" property="cards"/>
+                    <result column="name" property="name"/>
+                    <result column="insure_time" property="insureTime"/>
+                    <result column="createtimes" property="createtimes"/>
+                    <result column="insurance_phone" property="insurancePhone"/>
+                    <result column="cost" property="cost"/>
+                    <result column="company" property="company"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid, cards, name, insure_time, createtimes, insurance_phone, cost, company
+        </sql>
+
+</mapper>

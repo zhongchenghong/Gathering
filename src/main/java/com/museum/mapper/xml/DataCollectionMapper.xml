@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.DataCollectionMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.DataCollection">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column="applytime" property="applytime"/>
+                    <result column="applydepartment" property="applydepartment"/>
+                    <result column="shottime" property="shottime"/>
+                    <result column="shotname" property="shotname"/>
+                    <result column="shottype" property="shottype"/>
+                    <result column="shotcontent" property="shotcontent"/>
+                    <result column="pdepartment" property="pdepartment"/>
+                    <result column="sum" property="sum"/>
+                    <result column="complete" property="complete"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid, applytime, applydepartment, shottime, shotname, shottype, shotcontent, pdepartment, sum, complete
+        </sql>
+
+</mapper>

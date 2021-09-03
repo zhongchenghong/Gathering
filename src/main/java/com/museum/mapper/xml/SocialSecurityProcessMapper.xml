@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.SocialSecurityProcessMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.SocialSecurityProcess">
+                    <id column="id" property="id"/>
+                    <result column="social_type" property="socialType"/>
+                    <result column="social_title" property="socialTitle"/>
+                    <result column="social_content" property="socialContent"/>
+                    <result column="social_path" property="socialPath"/>
+                    <result column="social_file_name" property="socialFileName"/>
+                    <result column="createtimes" property="createtimes"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, social_type, social_title, social_content, social_path, social_file_name, createtimes
+        </sql>
+
+</mapper>

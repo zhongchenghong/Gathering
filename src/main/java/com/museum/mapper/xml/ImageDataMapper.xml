@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.ImageDataMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.ImageData">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column="completion" property="completion"/>
+                    <result column="purpose" property="purpose"/>
+                    <result column="Image_data_content" property="imageDataContent"/>
+                    <result column="departmentId" property="departmentId"/>
+                    <result column="state" property="state"/>
+                    <result column="applyTime" property="applyTime"/>
+                    <result column="createTime" property="createTime"/>
+                    <result column="name" property="name"/>
+                    <result column="filename" property="fileName"/>
+
+
+
+
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid, completion, purpose, Image_data_content, departmentId, applyTime, createTime,state,name,filename
+        </sql>
+
+</mapper>

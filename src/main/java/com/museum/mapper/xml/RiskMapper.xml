@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.RiskMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.Risk">
+                    <id column="id" property="id"/>
+                    <result column="parentid" property="parentid"/>
+                    <result column="name" property="name"/>
+                    <result column="createtimes" property="createtimes"/>
+                    <result column="premium" property="premium"/>
+                    <result column="insured_amount" property="insuredAmount"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, parentid, name, createtimes, premium, insured_amount
+        </sql>
+
+</mapper>

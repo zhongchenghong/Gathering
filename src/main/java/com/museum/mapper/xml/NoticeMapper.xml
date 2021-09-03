@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.NoticeMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.Notice">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column="title" property="title"/>
+                    <result column="content" property="content"/>
+                    <result column="creatTime" property="creatTime"/>
+                    <result column="fileName" property="fileName"/>
+                    <result column="filePath" property="filePath"/>
+                    <result column="types" property="types"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid, title, content, creatTime, fileName, filePath, types
+        </sql>
+
+</mapper>

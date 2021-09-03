@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.SendDocumentMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.SendDocument">
+                    <id column="id" property="id"/>
+                    <result column="document" property="document"/>
+                    <result column="document1" property="document1"/>
+                    <result column="degree" property="degree"/>
+                    <result column="release_time" property="releaseTime"/>
+                    <result column="briefing" property="briefing"/>
+                    <result column="stage" property="stage"/>
+                    <result column="main_copy" property="mainCopy"/>
+                    <result column="vice_copy" property="viceCopy"/>
+                    <result column="depoment" property="depoment"/>
+                    <result column="name" property="name"/>
+                    <result column="appplt_time" property="apppltTime"/>
+                    <result column="title" property="title"/>
+                    <result column="remoke" property="remoke"/>
+                    <result column="filename" property="filename"/>
+                    <result column="fileaddress" property="fileaddress"/>
+                    <result column="uid" property="uid"/>
+                    <result column="createtimes" property="createtimes"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, document, document1, degree, release_time, briefing, stage, main_copy, vice_copy, depoment, name, appplt_time, title, remoke, filename, fileaddress, uid, createtimes
+        </sql>
+
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.museum.dao.RepairMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.museum.domain.Repair">
+                    <id column="id" property="id"/>
+                    <result column="uid" property="uid"/>
+                    <result column="cards" property="cards"/>
+                    <result column="type" property="type"/>
+                    <result column="name" property="name"/>
+                    <result column="phone" property="phone"/>
+                    <result column="repair_time" property="repairTime"/>
+                    <result column="repair_department" property="repairDepartment"/>
+                    <result column="cost" property="cost"/>
+                    <result column="remarks" property="remarks"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, uid, cards, type, name, phone, repair_time, repair_department, cost, remarks
+        </sql>
+
+</mapper>
