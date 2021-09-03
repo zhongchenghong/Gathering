@@ -36,7 +36,7 @@ import java.util.List;
  */
 
 
-@Api(tags = {"档案借阅"})
+@Api(tags = {"信息中心---档案借阅"})
 @RestController
 @RequestMapping("/borrow-form")
 public class BorrowFormController {

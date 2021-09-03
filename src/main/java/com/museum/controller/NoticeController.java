@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-14
  */
-@Api(tags = {"通知公告"})
+@Api(tags = {"通用功能----通知公告"})
 @RestController
 @RequestMapping("/notice")
 public class NoticeController {

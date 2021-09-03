@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-06
  */
-@Api(tags = {"锦里公司安全记录检查表"})
+@Api(tags = {"锦里公司---锦里公司安全记录检查表"})
 @RestController
 @RequestMapping("/security-check")
 public class SecurityCheckController {

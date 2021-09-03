@@ -24,7 +24,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-07-27
  */
-@Api(tags = {"档案统计"})
+@Api(tags = {"信息中心----档案统计"})
 @RestController
 @RequestMapping("/archives-total")
 public class ArchivesTotalController {

@@ -29,7 +29,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-06-04
  */
-@Api(tags = {"部门组件"})
+@Api(tags = {"通用功能-----部门组件"})
 @RestController
 @RequestMapping("/department")
 @RequiredArgsConstructor

@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-23
  */
-@Api(tags = {"维护维修流程"})
+@Api(tags = {"安全保卫部-----维护维修流程"})
 @RestController
 @RequestMapping("/maintain-process")
 public class MaintainProcessController {

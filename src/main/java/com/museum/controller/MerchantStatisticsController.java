@@ -26,7 +26,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-08-11
  */
-@Api(tags = {"锦里商户统计、商户列表"})
+@Api(tags = {"锦里公司----商户统计、商户列表"})
 @RestController
 @RequestMapping("/merchant-statistics")
 public class MerchantStatisticsController {

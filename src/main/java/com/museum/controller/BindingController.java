@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-28
  */
-@Api(tags = {"同步账号绑定"})
+@Api(tags = {"4a------同步账号绑定"})
 @RestController
 @RequestMapping("/binding")
 public class BindingController {

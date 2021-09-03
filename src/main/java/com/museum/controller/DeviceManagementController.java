@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-17
  */
-@Api(tags = {"信息中心设备管理"})
+@Api(tags = {"信息中心-----设备管理"})
 @RestController
 @RequestMapping("/device-management")
 public class DeviceManagementController {

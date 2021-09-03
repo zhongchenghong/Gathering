@@ -31,7 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-20
  */
-@Api(tags = {"文创产品申请单"})
+@Api(tags = {"文创产业----产品申请单"})
 @RestController
 @RequestMapping("/cultural-alpply-form")
 public class CulturalAlpplyFormController {

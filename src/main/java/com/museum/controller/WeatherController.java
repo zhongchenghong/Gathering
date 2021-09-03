@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-15
  */
-@Api(tags = {"获取武侯区天气"})
+@Api(tags = {"统一发布---获取武侯区天气"})
 @RestController
 @RequestMapping("/weather")
 public class WeatherController {

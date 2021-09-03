@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-17
  */
-@Api(tags = {"设备告警"})
+@Api(tags = {"信息中心---设备告警"})
 @RestController
 @RequestMapping("/device-alarm")
 public class DeviceAlarmController {

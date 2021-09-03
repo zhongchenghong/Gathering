@@ -25,7 +25,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-08-06
  */
-@Api(tags = {"陈列展览三级联动"})
+@Api(tags = {"陈列展览部---目录三级联动"})
 @RestController
 @RequestMapping("/exhibition-linkage")
 public class ExhibitionLinkageController {

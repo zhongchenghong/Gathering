@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-27
  */
-@Api(tags = {"泰合信息安全运营中心系统"})
+@Api(tags = {"泰合信息安全运营中心系统接口"})
 @RestController
 @RequestMapping("/safe-operation")
 public class SafeOperationController {

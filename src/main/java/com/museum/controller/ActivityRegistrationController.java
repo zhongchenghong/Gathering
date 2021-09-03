@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-05
  */
-@Api(tags = {"活动报名小程序接口"})
+@Api(tags = {"活动报名小程序接口---活动报名小程序接口"})
 @RestController
 @RequestMapping("/activity-registration")
 public class ActivityRegistrationController {

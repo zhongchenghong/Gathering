@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-17
  */
-@Api(tags = {"车辆保险险种"})
+@Api(tags = {"车辆保险险种组件"})
 @RestController
 @RequestMapping("/risk")
 public class RiskController {

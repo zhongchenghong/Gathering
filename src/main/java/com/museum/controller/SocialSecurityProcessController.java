@@ -37,7 +37,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-07-12
  */
-@Api(tags = {"社保报销流程"})
+@Api(tags = {"人力资源部---社保报销流程"})
 @RestController
 @RequestMapping("/social-security-process")
 public class SocialSecurityProcessController {

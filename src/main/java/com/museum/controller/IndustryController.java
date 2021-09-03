@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-20
  */
-@Api(tags = {"文创产业部产业添加"})
+@Api(tags = {"文创产业部----产业添加"})
 @RestController
 @RequestMapping("/industry")
 public class IndustryController {

@@ -30,7 +30,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-07-15
  */
-@Api(tags = {"档案管理"})
+@Api(tags = {"信息中心----档案管理"})
 @RestController
 @RequestMapping("/archives")
 public class ArchivesController {

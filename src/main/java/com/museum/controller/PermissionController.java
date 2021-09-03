@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-06-07
  */
-@Api(tags = {"用户权限"})
+@Api(tags = {"通用功能-----用户权限"})
 @RestController
 @RequestMapping("/permission")
 @RequiredArgsConstructor

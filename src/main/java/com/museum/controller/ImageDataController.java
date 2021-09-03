@@ -33,7 +33,7 @@ import java.io.IOException;
  * @author lsj
  * @since 2021-07-15
  */
-@Api(tags = {"影像资料申请"})
+@Api(tags = {"信息中心-----影像资料申请"})
 @RestController
 @RequestMapping("/image-data")
 public class ImageDataController {

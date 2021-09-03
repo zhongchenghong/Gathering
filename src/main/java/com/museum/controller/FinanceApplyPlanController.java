@@ -28,7 +28,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-08-13
  */
-@Api(tags = {"财务用款计划申请"})
+@Api(tags = {"财务部-----用款计划申请"})
 @RestController
 @RequestMapping("/finance-apply-plan")
 public class FinanceApplyPlanController {

@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-05
  */
-@Api(tags = {"监测数据类型"})
+@Api(tags = {"保护信息管理系统----监测数据类型"})
 @RestController
 @RequestMapping("/testing-type")
 public class TestingTypeController {

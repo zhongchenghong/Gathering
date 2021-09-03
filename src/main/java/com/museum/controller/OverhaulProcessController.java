@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-23
  */
-@Api(tags = {"水电维修维护申请流程"})
+@Api(tags = {"安全保卫部----维护申请流程"})
 @RestController
 @RequestMapping("/overhaul-process")
 public class OverhaulProcessController {

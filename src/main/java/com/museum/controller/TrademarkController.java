@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-20
  */
-@Api(tags = {"文创产业部商标添加"})
+@Api(tags = {"文创产业部--文创产业部商标添加"})
 @RestController
 @RequestMapping("/trademark")
 public class TrademarkController {

@@ -25,7 +25,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-08-11
  */
-@Api(tags = {"锦里公司商户类型组件"})
+@Api(tags = {"锦里公司-----类型组件"})
 @RestController
 @RequestMapping("/merchant-type")
 public class MerchantTypeController {

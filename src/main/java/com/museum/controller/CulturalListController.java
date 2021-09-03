@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-20
  */
-@Api(tags = {"物品列表"})
+@Api(tags = {"信息中心----物品列表"})
 @RestController
 @RequestMapping("/cultural-list")
 public class CulturalListController {

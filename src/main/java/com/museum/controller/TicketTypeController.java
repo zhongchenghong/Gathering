@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-13
  */
-@Api(tags = {"财务票价类型"})
+@Api(tags = {"财务部---财务票价类型"})
 @RestController
 @RequestMapping("/ticket-type")
 public class TicketTypeController {

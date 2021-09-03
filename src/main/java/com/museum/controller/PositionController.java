@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-06-08
  */
-@Api(tags = {"组织"})
+@Api(tags = {"通用功能---组织"})
 @RestController
 @RequestMapping("/position")
 @RequiredArgsConstructor

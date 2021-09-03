@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-28
  */
-@Api(tags = {"分管馆长跟部门绑定"})
+@Api(tags = {"组件---分管馆长跟部门绑定"})
 @RestController
 @RequestMapping("/branchlibrary")
 public class BranchlibraryController {

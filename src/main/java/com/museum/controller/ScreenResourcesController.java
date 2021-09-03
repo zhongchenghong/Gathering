@@ -42,7 +42,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-06-29
  */
-@Api(tags = {"大屏资源上传"})
+@Api(tags = {"统一发布------大屏资源上传"})
 @RestController
 @RequestMapping("/screen-resources")
 public class ScreenResourcesController {

@@ -37,7 +37,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-07-01
  */
-@Api(tags = {"将用户添加到通讯录"})
+@Api(tags = {"通用功能------将用户添加到通讯录"})
 @RestController
 @RequestMapping("/maillist")
 public class MailListController {

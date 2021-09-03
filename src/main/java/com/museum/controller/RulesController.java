@@ -37,7 +37,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-07-09
  */
-@Api(tags = {"规章制度"})
+@Api(tags = {"管理运营驾驶舱---规章制度"})
 @RestController
 @RequestMapping("/rules")
 public class RulesController {

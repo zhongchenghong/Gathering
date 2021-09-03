@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-06-29
  */
-@Api(tags = {"编辑、添加大屏分辨率、位置、名称"})
+@Api(tags = {"统一发布------编辑、添加大屏分辨率、位置、名称"})
 @RestController
 @RequestMapping("/screen")
 public class ScreenController {

@@ -31,7 +31,7 @@ import java.util.Map;
  * @author lsj
  * @since 2021-06-08
  */
-@Api(tags = {"政治术语编辑"})
+@Api(tags = {"通用功能----政治术语编辑"})
 @RestController
 @RequestMapping("/politics")
 @RequiredArgsConstructor

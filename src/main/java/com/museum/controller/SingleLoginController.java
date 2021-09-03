@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 单点登录
  */
-@Api(tags = {"单点登录"})
+@Api(tags = {"4a-----单点登录"})
 @Controller
 @RequestMapping("/login")
 public class SingleLoginController {

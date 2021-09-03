@@ -41,7 +41,7 @@ import static com.museum.util.DateUtil.*;
  * @author lsj
  * @since 2021-07-02
  */
-@Api(tags = {"日程安排"})
+@Api(tags = {"通用功能----日程安排"})
 @RestController
 @RequestMapping("/mission-plan")
 public class MissionPlanController {

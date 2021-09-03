@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-23
  */
-@Api(tags = {"临时停车表单"})
+@Api(tags = {"安全保卫部----临时停车表单"})
 @RestController
 @RequestMapping("/parking-form")
 public class ParkingFormController {

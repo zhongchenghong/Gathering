@@ -41,7 +41,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-08-06
  */
-@Api(tags = {"锦里公司活动录入"})
+@Api(tags = {"锦里公司----活动录入"})
 @RestController
 @RequestMapping("/jinli-activity-entry")
 public class JinliActivityEntryController {

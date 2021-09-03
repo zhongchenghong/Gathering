@@ -43,7 +43,7 @@ import java.util.*;
  * @author lsj
  * @since 2021-06-06
  */
-@Api(tags = {"上传文件"})
+@Api(tags = {"统一资源管理-----上传文件"})
 @RestController
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*",maxAge = 3600)

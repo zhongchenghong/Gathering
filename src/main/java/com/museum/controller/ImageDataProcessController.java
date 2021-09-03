@@ -33,7 +33,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-07-15
  */
-@Api(tags = {"影像资料申请流程"})
+@Api(tags = {"信息中心-----影像资料申请流程"})
 @RestController
 @RequestMapping("/image-data-process")
 public class ImageDataProcessController {

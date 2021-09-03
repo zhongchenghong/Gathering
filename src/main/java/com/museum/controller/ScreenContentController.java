@@ -38,7 +38,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-06-29
  */
-@Api(tags = {"大屏发布编辑"})
+@Api(tags = {"统一发布------大屏发布编辑"})
 @RestController
 @RequestMapping("/screen-content")
 public class ScreenContentController {

@@ -32,7 +32,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-08-17
  */
-@Api(tags = {"新车登记"})
+@Api(tags = {"办公室驾----新车登记"})
 @RestController
 @RequestMapping("/car-register")
 public class CarRegisterController {

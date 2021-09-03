@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-22
  */
-@Api(tags = {"档案查阅表单"})
+@Api(tags = {"信息中心----档案查阅表单"})
 @RestController
 @RequestMapping("/file-access-form")
 public class FileAccessFormController {

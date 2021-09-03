@@ -36,7 +36,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-06-18
  */
-@Api(tags = {"资源注册"})
+@Api(tags = {"统一资源管理-----资源注册"})
 @RestController
 @RequestMapping("/resourceRegistration")
 public class ResourceRegistrationController {

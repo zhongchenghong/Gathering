@@ -37,7 +37,7 @@ import java.util.List;
  * @since 2021-05-17
  * 同步用户
  */
-@Api(tags = {"用户同步"})
+@Api(tags = {"4a----用户同步"})
 @RestController
 @RequestMapping("/user")
 @RequiredArgsConstructor

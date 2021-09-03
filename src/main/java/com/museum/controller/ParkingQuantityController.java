@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@Api(tags = {"剩余停车位"})
+@Api(tags = {"武侯祠----剩余停车位"})
 @RestController
 @RequestMapping("/parkingquantity")
 @RequiredArgsConstructor

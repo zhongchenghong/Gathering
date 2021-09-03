@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-19
  */
-@Api(tags = {"办公室物品录入"})
+@Api(tags = {"办公室---物品录入"})
 @RestController
 @RequestMapping("/office-goods-input")
 public class OfficeGoodsInputController {

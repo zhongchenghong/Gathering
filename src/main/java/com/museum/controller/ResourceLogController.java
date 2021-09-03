@@ -29,7 +29,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-06-18
  */
-@Api(tags = {"资源日志"})
+@Api(tags = {"统一资源管理-----资源日志"})
 @RestController
 @RequestMapping("/resource-log")
 public class ResourceLogController {

@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-21
  */
-@Api(tags = {"用章申请表单"})
+@Api(tags = {"办公室----用章申请表单"})
 @RestController
 @RequestMapping("/seal-form")
 public class SealFormController {

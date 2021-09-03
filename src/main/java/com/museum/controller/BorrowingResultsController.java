@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-30
  */
-@Api(tags = {"档案类型组件"})
+@Api(tags = {"信息中心---档案类型组件"})
 @RestController
 @RequestMapping("/borrowing-results")
 public class BorrowingResultsController {

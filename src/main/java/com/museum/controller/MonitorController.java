@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-26
  */
-@Api(tags = {"系统监听"})
+@Api(tags = {"通用功能-----系统监听"})
 @RestController
 @RequestMapping("/monitor")
 public class MonitorController {

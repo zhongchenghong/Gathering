@@ -31,7 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-17
  */
-@Api(tags = {"信息中心物品领用"})
+@Api(tags = {"信息中心----物品领用"})
 @RestController
 @RequestMapping("/goods-inform")
 public class GoodsInformController {

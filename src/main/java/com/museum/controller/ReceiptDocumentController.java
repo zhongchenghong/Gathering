@@ -32,7 +32,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-08-20
  */
-@Api(tags = {"办公室公文管理-收文统计"})
+@Api(tags = {"办公室公---文管理-收文统计"})
 @RestController
 @RequestMapping("/receip-document")
 public class ReceiptDocumentController {

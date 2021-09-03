@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-06-18
  */
-@Api(tags = {"全文检索"})
+@Api(tags = {"统一资源管理-----全文检索"})
 @RestController
 @RequestMapping("/resource-content")
 public class ResourceContentController {

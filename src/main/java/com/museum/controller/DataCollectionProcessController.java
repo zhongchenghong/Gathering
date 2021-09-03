@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-20
  */
-@Api(tags = {"影像资料制作流程"})
+@Api(tags = {"信息中心----影像资料制作流程"})
 @RestController
 @RequestMapping("/data-collection-process")
 public class DataCollectionProcessController {

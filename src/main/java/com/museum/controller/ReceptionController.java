@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-21
  */
-@Api(tags = {"日常接待申请单"})
+@Api(tags = {"办公室-----日常接待申请单"})
 @RestController
 @RequestMapping("/reception")
 public class ReceptionController {

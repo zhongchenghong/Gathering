@@ -25,7 +25,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-06-24
  */
-@Api(tags = {"地图坐标"})
+@Api(tags = {"GIS----地图坐标"})
 @RestController
 @RequestMapping("/points-message")
 public class PointsMessageController {

@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-23
  */
-@Api(tags = {"临时停车申请流程"})
+@Api(tags = {"安全保卫部----临时停车申请流程"})
 @RestController
 @RequestMapping("/parking-process")
 public class ParkingProcessController {

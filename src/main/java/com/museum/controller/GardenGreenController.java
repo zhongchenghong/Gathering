@@ -25,7 +25,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-08-12
  */
-@Api(tags = {"园林景观绿化统计"})
+@Api(tags = {"园林景观---绿化统计"})
 @RestController
 @RequestMapping("/garden-green")
 public class GardenGreenController {

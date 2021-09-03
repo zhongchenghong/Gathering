@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-11
  */
-@Api(tags = {"锦里公司领导组件"})
+@Api(tags = {"锦里公司---领导组件"})
 @RestController
 @RequestMapping("/jlleader")
 public class JlleaderController {

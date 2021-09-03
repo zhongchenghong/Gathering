@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-23
  */
-@Api(tags = {"水电维修维护表单"})
+@Api(tags = {"安全保卫部----水电维修维护表单"})
 @RestController
 @RequestMapping("/overhaul-form")
 public class OverhaulFormController {

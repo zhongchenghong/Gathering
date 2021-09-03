@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-17
  */
-@Api(tags = {"办公室加油登记"})
+@Api(tags = {"办公室-----加油登记"})
 @RestController
 @RequestMapping("/lubricate-record")
 public class LubricateRecordController {

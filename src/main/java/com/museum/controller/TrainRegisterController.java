@@ -33,7 +33,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-08-06
  */
-@Api(tags = {"锦里培训登记"})
+@Api(tags = {"锦里----锦里培训登记"})
 @RestController
 @RequestMapping("/train-register")
 public class TrainRegisterController {

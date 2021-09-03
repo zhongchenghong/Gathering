@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-23
  */
-@Api(tags = {"软硬件维护维修申请单"})
+@Api(tags = {"信息中心-----软硬件维护维修申请单"})
 @RestController
 @RequestMapping("/maintain-form")
 public class MaintainFormController {

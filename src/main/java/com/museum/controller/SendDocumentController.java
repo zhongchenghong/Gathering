@@ -36,7 +36,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-08-20
  */
-@Api(tags = {"办公室公文管理-发文"})
+@Api(tags = {"办公室公文管理---发文"})
 @RestController
 @RequestMapping("/send-document")
 public class SendDocumentController {

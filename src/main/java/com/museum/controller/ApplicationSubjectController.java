@@ -24,7 +24,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-08-16
  */
-@Api(tags = {"财务部各个科目"})
+@Api(tags = {"财务部---财务部各个科目"})
 @RestController
 @RequestMapping("/application-subject")
 public class ApplicationSubjectController {

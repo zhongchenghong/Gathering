@@ -28,7 +28,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-08-16
  */
-@Api(tags = {"信息中心录入物品名称"})
+@Api(tags = {"信息中心----录入物品名称"})
 @RestController
 @RequestMapping("/goods-information")
 public class GoodsInformationController {

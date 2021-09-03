@@ -37,9 +37,6 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 
-
-
-
 @Api(tags = {"办公室-收文"})
 @RestController
 @RequestMapping("/receipt")

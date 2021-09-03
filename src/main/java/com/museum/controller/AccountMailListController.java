@@ -34,7 +34,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-07-01
  */
-@Api(tags = {"通讯录分组管理"})
+@Api(tags = {"通用功能--通讯录分组管理"})
 @RestController
 @RequestMapping("/account-mail-list")
 public class AccountMailListController {

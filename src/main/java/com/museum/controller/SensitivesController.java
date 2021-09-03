@@ -32,7 +32,7 @@ import java.util.Set;
  * @author lsj
  * @since 2021-06-08
  */
-@Api(tags = {"敏感字"})
+@Api(tags = {"敏感字组件"})
 @RestController
 @RequestMapping("/sensitives")
 @RequiredArgsConstructor

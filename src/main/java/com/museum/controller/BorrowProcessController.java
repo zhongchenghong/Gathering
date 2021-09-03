@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-28
  */
-@Api(tags = {"档案借阅流程"})
+@Api(tags = {"信息中心---档案借阅流程"})
 @RestController
 @RequestMapping("/borrow-process")
 public class BorrowProcessController {

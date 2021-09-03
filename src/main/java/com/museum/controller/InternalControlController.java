@@ -38,7 +38,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-07-09
  */
-@Api(tags = {"内控制度"})
+@Api(tags = {"法律事务部---内控制度"})
 @RestController
 @RequestMapping("/internal-control")
 public class InternalControlController {

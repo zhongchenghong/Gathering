@@ -43,7 +43,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-08-03
  */
-@Api(tags = {"工会活动录入"})
+@Api(tags = {"工会--工会活动录入"})
 @RestController
 @RequestMapping("/activity-entry")
 public class ActivityEntryController {

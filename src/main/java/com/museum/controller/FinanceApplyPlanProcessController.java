@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-16
  */
-@Api(tags = {"财务用款计划申请流程"})
+@Api(tags = {"财务部------用款计划申请流程"})
 @RestController
 @RequestMapping("/finance-apply-plan-process")
 public class FinanceApplyPlanProcessController {

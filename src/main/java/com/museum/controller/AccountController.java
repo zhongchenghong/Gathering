@@ -51,7 +51,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-05-25
  */
-@Api(tags = {"用户登录"})
+@Api(tags = {"通用功能----用户登录"})
 @RestController
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*",maxAge = 3600)

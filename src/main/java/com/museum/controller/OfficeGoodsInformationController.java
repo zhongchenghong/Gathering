@@ -25,7 +25,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-08-19
  */
-@Api(tags = {"办公室录入物品名称"})
+@Api(tags = {"办公室录---入物品名称"})
 @RestController
 @RequestMapping("/office-goods-information")
 public class OfficeGoodsInformationController {

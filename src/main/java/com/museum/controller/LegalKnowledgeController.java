@@ -37,7 +37,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-07-08
  */
-@Api(tags = {"知识库开发"})
+@Api(tags = {"法律事务部---知识库开发"})
 @RestController
 @RequestMapping("/legal-knowledge")
 public class LegalKnowledgeController {

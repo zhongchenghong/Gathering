@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-07-15
  */
-@Api(tags = {"各网站年月日访问量表"})
+@Api(tags = {"官网------各网站年月日访问量表"})
 @RestController
 @RequestMapping("/visits")
 public class VisitsController {

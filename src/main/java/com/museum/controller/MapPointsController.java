@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-06-24
  */
-@Api(tags = {"地图点位类型"})
+@Api(tags = {"GIS-----地图点位类型"})
 @RestController
 @RequestMapping("/map-points")
 public class MapPointsController {

@@ -34,7 +34,7 @@ import java.util.Date;
  * 注册系统
  * 注册成功，才可以同步账号
  */
-@Api(tags = {"注册系统"})
+@Api(tags = {"通用功能---注册系统"})
 @RestController
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*",maxAge = 3600)

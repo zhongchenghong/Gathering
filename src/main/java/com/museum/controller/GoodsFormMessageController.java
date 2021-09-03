@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-17
  */
-@Api(tags = {"信息中心"})
+@Api(tags = {"信息中心---物品领用申请表单关联表"})
 @RestController
 @RequestMapping("/goods-form-message")
 public class GoodsFormMessageController {

@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lsj
  * @since 2021-08-13
  */
-@Api(tags = {"财务部科目"})
+@Api(tags = {"财务部---科目"})
 @RestController
 @RequestMapping("/financial-subject")
 public class FinancialSubjectController {

@@ -28,7 +28,7 @@ import java.util.List;
  * @author lsj
  * @since 2021-08-06
  */
-@Api(tags = {"文化公司产品收入"})
+@Api(tags = {"文化公司-----产品收入"})
 @RestController
 @RequestMapping("/product-income")
 public class ProductIncomeController {
