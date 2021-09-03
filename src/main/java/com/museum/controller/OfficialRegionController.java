@@ -1,4 +1,4 @@
-package com.museum.controller.weixin;
+package com.museum.controller;
 
 import com.museum.common.Result;
 import com.museum.common.ResultUtil;
@@ -50,33 +50,4 @@ public class OfficialRegionController {
         return ResultUtil.success(s);
     }
 
-    public static void main(String[] args) {
-        String s = null;
-        try {
-            JSONObject header = new JSONObject();
-            header.put("username", "成都武侯祠博物馆");//用户名
-            header.put("password", " cdwhc85550224");//用户密码
-            header.put("token", "ff863f838e8ecb69876f8987b0ed4561");//申请到的token
-            header.put("account_type", "1");
-
-            String urlStr = "https://api.baidu.com/json/tongji/v1/ReportService/getData";
-            String charset = "utf-8";
-            JSONObject body = new JSONObject();
-            body.put("siteId","10972827");
-            body.put("method","overview/getDistrictRpt");//需要获取的数据
-            body.put("start_date",20210101);
-            body.put("end_date",20220101);
-            body.put("metrics","pv_count");//指标,数据单位
-            body.put("gran","day");
-            JSONObject params = new JSONObject();
-            params.put("header", header);
-            params.put("body", body);
-            byte[] res = HttpsUtil.post(urlStr, params.toString(), charset);
-            s = new String(res);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        System.out.println(s);
-    }
 }

@@ -1,4 +1,4 @@
-package com.museum.controller.weixin;
+package com.museum.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.museum.common.HttpRequest;

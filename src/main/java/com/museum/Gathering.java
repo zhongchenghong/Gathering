@@ -10,7 +10,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @MapperScan(basePackages = {"com.museum.dao.*"})
 @EnableScheduling
-//@MapperScan(basePackages = {""})
 public class Gathering {
 
     public static void main(String[] args) {
