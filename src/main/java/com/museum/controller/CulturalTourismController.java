@@ -41,7 +41,7 @@ public class CulturalTourismController {
     private IAccountService accountService;
 
     @ApiOperation(value = "新增数据中心-文旅数据上报")
-    @PostMapping()
+    @PostMapping("/getPage")
     public int add(@RequestBody CulturalTourism culturalTourism, HttpServletRequest req){
         Account acc= accountService.findAccount(req);
         culturalTourism.setUid(acc.getId());

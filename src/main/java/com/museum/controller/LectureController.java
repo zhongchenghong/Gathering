@@ -102,7 +102,7 @@ public class LectureController {
         @ApiImplicitParam(name = "page", value = "页码"),
         @ApiImplicitParam(name = "pageCount", value = "每页条数")
     })
-    @GetMapping()
+    @GetMapping("/getPage")
     public IPage<Lecture> findListByPage(@RequestParam Integer page,
                                    @RequestParam Integer pageCount){
         return lectureService.findListByPage(page, pageCount);

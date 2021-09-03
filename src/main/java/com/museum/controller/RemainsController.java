@@ -105,7 +105,7 @@ public class RemainsController {
         @ApiImplicitParam(name = "page", value = "页码"),
         @ApiImplicitParam(name = "pageCount", value = "每页条数")
     })
-    @GetMapping()
+    @GetMapping("/getPage")
     public IPage<Remains> findListByPage(@RequestParam Integer page,
                                    @RequestParam Integer pageCount){
         return remainsService.findListByPage(page, pageCount);

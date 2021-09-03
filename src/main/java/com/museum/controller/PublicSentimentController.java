@@ -56,7 +56,7 @@ public class PublicSentimentController {
         @ApiImplicitParam(name = "page", value = "页码"),
         @ApiImplicitParam(name = "pageCount", value = "每页条数")
     })
-    @GetMapping()
+    @GetMapping("/getPage")
     public IPage<PublicSentiment> findListByPage(@RequestParam Integer page,
                                    @RequestParam Integer pageCount){
         return publicSentimentService.findListByPage(page, pageCount);

@@ -107,7 +107,7 @@ public class AcademicPapersController {
         @ApiImplicitParam(name = "page", value = "页码"),
         @ApiImplicitParam(name = "pageCount", value = "每页条数")
     })
-    @GetMapping()
+    @GetMapping("/getPage")
     public IPage<AcademicPapers> findListByPage(@RequestParam Integer page,
                                    @RequestParam Integer pageCount,String title){
         QueryWrapper queryWrappet  = new QueryWrapper();

@@ -59,7 +59,7 @@ public class GreenWaterBodyController {
         @ApiImplicitParam(name = "page", value = "页码"),
         @ApiImplicitParam(name = "pageCount", value = "每页条数")
     })
-    @GetMapping()
+    @GetMapping("/getPage")
     public IPage<GreenWaterBody> findListByPage(@RequestParam Integer page,
                                    @RequestParam Integer pageCount,String type,String region){
         QueryWrapper queryWrapper = new QueryWrapper();

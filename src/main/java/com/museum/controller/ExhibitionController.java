@@ -36,7 +36,7 @@ import java.util.UUID;
  * @author lsj
  * @since 2021-08-06
  */
-@Api(tags = {"陈列部----展览表单"})
+@Api(tags = {"陈列展览部----展览表单"})
 @RestController
 @RequestMapping("/exhibition")
 public class ExhibitionController {

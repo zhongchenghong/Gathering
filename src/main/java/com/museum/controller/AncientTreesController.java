@@ -68,7 +68,7 @@ public class AncientTreesController {
         @ApiImplicitParam(name = "page", value = "页码"),
         @ApiImplicitParam(name = "pageCount", value = "每页条数")
     })
-    @GetMapping()
+    @GetMapping("/getPage")
     public IPage<GardenPlants> findListByPage(@RequestParam Integer page,
                                    @RequestParam Integer pageCount,String name,String diameter,String section,String genus,String nickname){
 

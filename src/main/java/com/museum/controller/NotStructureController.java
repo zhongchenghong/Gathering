@@ -108,7 +108,7 @@ public class NotStructureController {
         @ApiImplicitParam(name = "page", value = "页码"),
         @ApiImplicitParam(name = "pageCount", value = "每页条数")
     })
-    @GetMapping()
+    @GetMapping("/getPage")
     public IPage<NotStructure> findListByPage(@RequestParam Integer page,
                                    @RequestParam Integer pageCount,String name){
         QueryWrapper queryWrapper = new QueryWrapper();
