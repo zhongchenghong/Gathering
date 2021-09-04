@@ -54,17 +54,6 @@ public class UserAnalysis {
         return ResultUtil.success(sr);
     }
 
-    public static void main(String[] args) {
-        String str =access_token();
-        JSONObject jsonParam = new JSONObject();
-        jsonParam.put("begin_date", 20210101);
-        jsonParam.put("end_date", 20210701);
-        String param = jsonParam.toString();
-        HttpRequest rq= new HttpRequest();
-        System.out.println(str);
-        String sr=HttpRequest.sendPost2("https://api.weixin.qq.com/datacube/getusersummary?access_token="+str, param);
-       System.out.println(sr);
 
-    }
 
 }

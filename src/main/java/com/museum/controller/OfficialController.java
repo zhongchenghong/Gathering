@@ -5,6 +5,7 @@ import com.museum.common.HttpRequest;
 import com.museum.common.Result;
 import com.museum.common.ResultUtil;
 import com.museum.util.HttpsUtil;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import net.sf.json.JSONArray;
 import org.apache.http.HttpEntity;
@@ -29,7 +30,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/official")
-@ApiOperation(value = "获取官网访问量(趋势数据)")
+@Api(tags = {"获取官网访问量(趋势数据)"})
 public class OfficialController {
 
     @ApiOperation(value = "获取官网访问量")
@@ -58,7 +59,6 @@ public class OfficialController {
             params.put("body", body);
             byte[] res = HttpsUtil.post(urlStr, params.toString(), charset);
             sr = new String(res);
-
         } catch (Exception e) {
             e.printStackTrace();
         }

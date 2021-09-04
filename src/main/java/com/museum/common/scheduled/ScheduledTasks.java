@@ -1,8 +1,10 @@
 package com.museum.common.scheduled;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -49,29 +51,10 @@ public class ScheduledTasks {
     @Resource
     private IActivityRegistrationService activityRegistrationService;
 
-    //日程安排未完成进待办事项
-   @Scheduled(cron = "0 0 1 * * ?")
-    public void reportCurrent(){
-       String date=SystemDateUtils.getStrDate();
-       QueryWrapper queryWrapper  = new QueryWrapper();
-       queryWrapper.eq("planstate",0);
-       List<MissionPlan> list=missionPlanService.list(queryWrapper);
-       for (int i=0;i<list.size();i++){
-           QueryWrapper queryWrapperw  = new QueryWrapper();
-           queryWrapperw.eq("mission_plan_id",list.get(i).getId());
-           Agent aaa=agentService.getOne(queryWrapperw);
-           if(aaa==null){
-               Agent ag= new Agent();
-               ag.setTitles(list.get(i).getPlanContent());
-               ag.setMissionPlanId(list.get(i).getId());
-               ag.setCreatetimes(date);
-               ag.setUid(list.get(i).getUid());
-               agentService.saveOrUpdate(ag);
-           }
+    @Resource
+    private IWeiXinVisitsService weiXinVisitsService;
 
-       }
 
-    }
 
    //活动报名小程序获取数据
     @Scheduled(fixedRate=1000000)
@@ -176,23 +159,23 @@ public class ScheduledTasks {
                         testingEquipmentDataService.add(testingEquipmentData);
                     }
 
-
                     }
 
-
-
             }
-
 
         }
 
 
+
+
+    //获取活动报名小程序Authorization
     public static String getactivityRegistration(){
         String str= HttpRequest.sendPost("https://service.wuhouci.net.cn/api/admin/thirdParty/getAccessToken","account=shuwon&passWord=a5f767f56a508e143de28224fafba332");
         JSONObject jsonObj = new JSONObject(str);
         JSONObject jsonObj1 = new JSONObject(jsonObj.get("data").toString());
         return jsonObj1.get("Authorization").toString();
         }
+
 
 
 

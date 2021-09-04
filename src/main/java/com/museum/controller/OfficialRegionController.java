@@ -3,6 +3,7 @@ package com.museum.controller;
 import com.museum.common.Result;
 import com.museum.common.ResultUtil;
 import com.museum.util.HttpsUtil;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.json.JSONObject;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/officialregion")
-@ApiOperation(value = "获取官网访问量(地区趋势数据)")
+@Api(tags = {"获取官网访问量(地区趋势数据)"})
 public class OfficialRegionController {
 
     @ApiOperation(value = "获取官网访问量地区趋势数据")
