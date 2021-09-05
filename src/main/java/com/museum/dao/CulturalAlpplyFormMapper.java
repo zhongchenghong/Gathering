@@ -1,5 +1,6 @@
 package com.museum.dao;
 
+import com.museum.domain.Account;
 import com.museum.domain.CulturalAlpplyForm;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -12,5 +13,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 2021-08-20
  */
 public interface CulturalAlpplyFormMapper extends BaseMapper<CulturalAlpplyForm> {
+
+
 
 }

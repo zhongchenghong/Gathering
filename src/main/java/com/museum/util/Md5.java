@@ -30,7 +30,7 @@ public class Md5 {
     }
 
     public static void main(String[] args) throws UnsupportedEncodingException, NoSuchAlgorithmException {
-        String password = new SimpleHash("SHA-1", "123456", "test9", 16).toString();
+        String password = new SimpleHash("SHA-1", "123456", "test16", 16).toString();
 
         System.out.println(password);
     }

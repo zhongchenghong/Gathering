@@ -59,7 +59,7 @@ public class Generator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/museum?&characterEncoding=utf8&useSSL=false&serverTimezone=UTC");
+        dsc.setUrl("jdbc:mysql://localhost:3306/museum?&characterEncoding=utf8&useSSL=false&serverTimezone=UTC");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("12345678");
